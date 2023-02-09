@@ -21,7 +21,7 @@ function tchauEspacosEmBranco(stringExemplo) {
     // Exemplo: "     oi    " deve se tornar "oi"
 
     let nome_completo = " Renner Lima "
-    return nome_completo.trim()
+    return stringExemplo.trim()
     }
 
 function tudoMaiusculo(nomeAleatório) {
@@ -45,15 +45,14 @@ function fazParte(frase, palavra) {
     // Exemplo: fazParte("Saudações Tricolores", "Tricolores") => true
     // Explicando em PT-BR: Se a frase é "Tricolores", e a palavra for "Tricolores", a função retorna true
 
-    return fazParte("Seleção brasileira", "seleção")
+    return frase.includes(palavra)
 }
 
 function substituicao(string, charQueSeraSub, charSubstituto) {
     // TODO: Retorne uma nova string, com caractéres substituidos: charQueSeraSub por charSubstituto
     // Exemplo: substituicao("Lina", "a", "o") => "Lino"
 
-    let exemplo = "Lina"
-    return exemplo.replace("Lina", "Lino")
+    return string.replace(charQueSeraSub, charSubstituto)
 
 }
 
@@ -69,6 +68,5 @@ function papagaio(string, numRepeticao) {
     // TODO: Retorna uma string que é repetida pela quantidade de vezes igual à numRepeticao
     // Exemplo: papagaio("Como estamos?", 3) => "Como estamos?Como estamos?Como estamos?"
 
-    let papagaio = "repetir"
-    return repeat(papagaio, 3)
+    return string.repeat(numRepeticao)
 }
