@@ -12,7 +12,7 @@ function primeiraFuncao() {
 function myGithubUsername() {
     // TODO: A função deve retornar o seu usuário Github
 
-    return "raphgran";
+    return "fabioauriani";
 
 }
 
